@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Dancing+Script:wght@700&family=Euphoria+Script&family=Passions+Conflict&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Dancing+Script:wght@700&family=Euphoria+Script&family=Padyakke+Expanded+One&family=Passions+Conflict&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="fondopagina" class="fondopagina">
+  <section id="pantallaPrincipal">
+    <h1 class="bienvenido"> Bienvenido Muggle al <br> Mundo de Harry Potter</h1>
+    <article class="botones">
+      <button class="btns" id="houses">Houses</button>
+      <button class="btns" id="characters">Characters</button>
+      <button class="btns" id="novels">Novels</button>
+      <button class="btns" id="potions">Potions</button>
+      <button class="btns" id="spells">Spells</button>
+    </article>
+  </section>
+  <nav id="btnsMenu" class="btnsMenu">
+    <div class="imgMenu">
+      <img src="./imagenes/Harry-Potter-emblem-sinfondo.png" alt="" id="logoHPNav" class="logoHPNav">
+    </div>
+    <div class="opcionesMenu">
+      <button class="btnsNav" id="housesMenu">Houses</button>
+      <button class="btnsNav" id="charactersMenu">Characters</button>
+      <button class="btnsNav" id="novelsMenu">Novels</button>
+      <button class="btnsNav" id="potionsMenu">Potions</button>
+      <button class="btnsNav" id="spellsMenu">Spells</button>
+    </div>
+  </nav>
+  <!-- ACÁ INICIA HOUSES -->
+  <section class="paginahouse" id="housesP">
+    <section class="gryffindor">
+      <img class="shieldgryffindor" src="egryffindor.png" alt="Shield Gryffindor">
+      <br>
+      <br>
+      <br>
+      <ol> <b> Founder: </b> Godric Gryffindor </ol>
+      <ol> <b> Head of house:</b> Minerva McGonagall</ol>
+      <ol> <b> Colores: </b>Scarlet and gold </ol>
+      <ol> <b> Animal: </b>Lion </ol>
+      <ol> <b> Element:</b> Fire </ol>
+      <ol> <b> Relic:</b> Sword </ol>
+      <ol> <b> Relevant Characters:</b> Harry Potter; Ron Wesley; Hermione Grange</ol>
+    </section>
+    <section class="Hufflepuff">
+      <img class="shieldhufflepuff" src="ehufflepuff.png" alt="Shield Hufflepuff">;
+      <br>
+      <br>
+      <br>
+      <ol> <b>Founder:</b> Helga Hufflepuff </ol>
+      <ol> Head of house: Pomona Sprout </ol>
+      <ol> Colors: Yellow and black</ol>
+      <ol> Animal: Badger </ol>
+      <ol> Element: Earth </ol>
+      <ol> Relic: Helga cup </ol>
+      <ol> Relevant Characters: Cedric Diggory </ol>
+    </section>
+    <section class="ravenclaw">
+      <img class="shielravenclaw" src="eravenclaw.png" alt="Shield Ravenclaw">;
+      <br>
+      <br>
+      <br>
+      <ol> Founder: Rowena Ravenclaw </ol>
+      <ol> Head of house: Filius Flitwick </ol>
+      <ol> Colors: Blue and bronze </ol>
+      <ol> Animal: Eagle </ol>
+      <ol> Element: Air </ol>
+      <ol> Relic: Tiara </ol>
+      <ol> Relevant Characters: Luna Loveggog </ol>
+    </section>
+    <section class="Slytherin">
+      <img class="shielslytherin" src="eslytherin.png" alt="Shield Slytherin">;
+      <br>
+      <br>
+      <br>
+      <ol> <b>Founder: </b> Salazar Slytherin </ol>
+      <ol> Head of house: Severus Snape </ol>
+      <ol> Colors: Emerald green and silver </ol>
+      <ol> Animal: Snake </ol>
+      <ol> Element: Water </ol>
+      <ol> Relic: Reliquary </ol>
+      <ol> Relevant Characters: Draco Malfoy </ol>
+    </section>
+  </section>
+  <!-- ACÁ INICIA CHARACTERS -->
+  <section id="charactersP" class="charactersP">
+    <div class="filtro_horizontal_block" id="filtro_horizontal_block">
+      <div class="contenedor_filtro_AZ">
+        <div class="filtro_horizontal_titulo">
+          <h4>Ordenar por</h4><br>
+        </div>
+        <div class="filtro_radio">
+          <input type="radio" id="filtro_ascendente" class="filtro_ascendente" name="ord_alfabetico" value="">
+          <label for="filtro_ascendente">Ascendente (A-Z)</label>
+          <br>
+          <input type="radio" id="filtro_descendente" class="filtro_descendente" name="ord_alfabetico" value="">
+          <label for="filtro_descendente">Descendente (Z-A)</label>
+        </div>
+      </div>
+      <div class="contenedor_filtro_gender">
+        <div class="filtro_horizontal_titulo2">
+          <h4>Gender/Genero</h4><br>
+        </div>
+        <div class="filtro_radio">
+          <input type="radio" id="filtro_females" class="filtro_females" name="gender" value="">
+          <label for="filtro_ascendente">Females</label>
+          <br>
+          <input type="radio" id="filtro_males" class="filtro_male" name="gender" value="">
+          <label for="filtro_descendente">Males</label>
+        </div>
+      </div>
+    </div>
+    <div class="div_dataCharacters" id="div_dataCharacters">
+      <div class="casilla_characters" id="casilla_characters"></div>
+    </div>
+  </section>
+  <section id="novelsP">
+    <div class="div_dataNovels" id="div_dataNovels">
+      <div class="casilla_novels" id="casilla_novels"></div>
+    </div>
+  </section>
+  <section id="potionsP">
+    <div class="casilla_potions" id="casilla_potions"></div>
+    
+  </section>
+  <section class="fondo_spells" id="spellsP">
+    <div class="box_type_spells">
+      <imput type="button" class="encantamiento" id="encantamiento"> Charm</imput>
+      <imput type="radio" class="conjuracion" id="conjuracion"> Conjuration</imput>
+      <imput type="text" class="deletrear" id="deletrear"> Spell</imput>
+      <imput type="text" class="transfiguracion" id="transfiguracion"> Transfiguration</imput>
+      <imput type="text" class="desaparicion" id="desaparicion"> Vanishment</imput>
+      <imput type="text" class="maleficio" id="maleficio"> Hex </imput>
+      <imput type="text" class="maldicion" id="maldicion"> Curse </imput>
+      <imput type="text" class="transportacion" id="transportacion"> Transportation</imput>
+    </div>
+
+
+
+    <div class="casilla_spells" id="casilla_spells"></div>
+
+  </section>
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
